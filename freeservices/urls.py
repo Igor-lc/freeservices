@@ -21,9 +21,9 @@ from django.conf.urls.static import static
 from downloader import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.homepage, name='homepage'),
-    path('downloader/', include('downloader.urls')),
+    path('download/', views.download_youtube_downloader, name='download_youtube_downloader'),
+    path('gps-map/', include('gps.urls')),
 ]
 
 if settings.DEBUG:
