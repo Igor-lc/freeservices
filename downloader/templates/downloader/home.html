@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Free YouTube Downloader</title>
+    <link rel="stylesheet" href="{% static 'downloader/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+<div class="downloads-section">
+  <h1>Завантаження програм</h1>
+  <div class="downloads-grid">
+    <div class="download-card">
+      <h2>Free YouTube Downloader</h2>
+      <p>Безкоштовна програма для завантаження відео з YouTube на Windows.</p>
+      <form action="{% url 'download_youtube_downloader' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Завантажити</button>
+      </form>
+    </div>
+    <!-- Додаткові карточки тут -->
+  </div>
+</div>
+
+<div class="gps-section">
+  <h1>GPS-Моніторинг транспорту</h1>
+  <div class="downloads-grid">
+    <div class="download-card">
+      <h2>Моніторинг транспорту</h2>
+      <p>Контроль місцезнаходження та маршрутів в реальному часі.</p>
+      <!-- Форма входу / демо буде пізніше -->
+    </div>
+  </div>
+</div>
+
+<div class="gps-equipment-section">
+  <h1>Купити обладнання для GPS-Моніторингу</h1>
+  <div class="downloads-grid">
+    <div class="download-card">
+      <h2>Автомобільні GPS-Трекери</h2>
+      <p>Трекери для легкового, вантажного транспорту та спецтехніки.</p>
+    </div>
+    <div class="download-card">
+      <h2>Датчики палива</h2>
+      <p>Точний контроль рівня палива для економії та безпеки.</p>
+    </div>
+    <div class="download-card">
+      <h2>Додаткові модулі безпеки</h2>
+      <p>Блокування двигуна, кнопки тривоги, контроль дверей.</p>
+    </div>
+    <div class="download-card">
+      <h2>Комплекти для спецтехніки</h2>
+      <p>Рішення для моніторингу будівельної і аграрної техніки.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

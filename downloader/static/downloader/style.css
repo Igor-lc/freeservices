@@ -1,0 +1,66 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.downloads-section {
+  padding: 50px 0;
+}
+
+.downloads-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.download-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.download-card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.download-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.download-card button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-card button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.gps-section, .gps-equipment-section {
+  padding: 50px 0;
+}
+
+.gps-section h1, .gps-equipment-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
