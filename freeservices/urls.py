@@ -22,8 +22,9 @@ from downloader import views
 
 urlpatterns = [
     path('', views.homepage, name='homepage'),
+    path("admin/", admin.site.urls),
     path('download/', views.download_youtube_downloader, name='download_youtube_downloader'),
-    path('gps-map/', include('gps.urls')),
+    path("gps/", include("gps.urls")),
 ]
 
 if settings.DEBUG:
