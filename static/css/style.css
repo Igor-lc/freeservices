@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* футер внизу */
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1; /* Дозволяє контейнеру зайняти доступний простір */
+}
+
+
+/* Хедер */
+.header {
+    background-color: #4ea3ff;
+    color: white;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 40px;
+}
+
+.header .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header .header-right .contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Футер */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column ul li a {
+  color: #4ea3ff !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #8fcfff !important;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.footer-bottom p:last-child {
+  margin-bottom: 0;
+}

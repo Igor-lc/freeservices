@@ -1,0 +1,74 @@
+<!-- freeservices/templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="{% static 'images/GDi_logo.svg' %}" alt="Логотип" class="logo-img">
+            </div>
+
+            <!-- Контактні дані -->
+            <div class="header-right">
+                <div class="contact-info">
+                    <p>Адреса: Київ, Україна</p>
+                    <p>Телефон: +38(066) 123-45-67</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Тут буде основний контент -->
+        <p>Тут можуть бути картки, інформація і інше.</p>
+    </div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>GPS обладнання</h3>
+        <ul>
+          <li><a href="#">GDi_Tracker</a></li>
+          <li><a href="#">GDi_Sensor</a></li>
+          <li><a href="#">Гальванічні розв'язки</a></li>
+          <li><a href="#">GDi_Monitor</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Контакти</h3>
+        <ul>
+          <li><a href="mailto:ibalitskyi@gmail.com">IBalitskyi@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/ibalitskyi/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Igor-lc" target="_blank">GitHub</a></li>
+          <li><a href="https://t.me/python_kyiv_dev" target="_blank">PythonCommunity&Courses</a></li>
+          <li><a href="https://t.me/PythonDjangoDB" target="_blank">Telegram</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>GDi Systems LLC</h3>
+        <ul>
+          <li><a href="https://gdi.net/industries/transport-and-logistics/" target="_blank">Про компанію</a></li>
+          <li><a href="https://gps-monitoring.com.ua/ru/gps-treker-gdi-opyt-ispolzovanija/" target="_blank">GPS трекер «GDi». Опыт использования.</a></li>
+          <li><a href="https://gps-monitoring.com.ua/ru/novye-gps-trekery-ukrainskogo-proizvodstva-gdi/" target="_blank">Новые GPS трекеры украинского производства «GDi_Tracker»
+</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2012–2025, ФОП Баліцький Ігор Миколайович</p>
+      <p>«GDi Systems» LLC | ЄДРПОУ 37242500</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
