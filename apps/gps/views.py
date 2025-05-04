@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from gps.parsers.wialon_txt_parser import parse_wialon_log_to_geojson
+from apps.gps.parsers.wialon_txt_parser import parse_wialon_log_to_geojson
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
