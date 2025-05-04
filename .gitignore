@@ -117,3 +117,5 @@ celerybeat.pid
 profile_default/
 ipython_config.py
 cython_debug/
+
+static/images/GDi_logo.svg
