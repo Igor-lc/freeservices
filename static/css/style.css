@@ -38,7 +38,7 @@ body {
 .logo {
   display: flex;
   align-items: center; /* Вирівнювання по вертикалі */
-  gap: 10px;            /* Відстань між логотипом і текстом */
+  gap: 10px;
 }
 
 .logo-text {
@@ -46,7 +46,7 @@ body {
   font-weight: bold;
   color: white;
   position: relative;
-  top: 1px; /* Тонке візуальне вирівнювання */
+  top: 1px; /* візуальне вирівнювання */
 }
 
 .header-right {
@@ -68,6 +68,7 @@ body {
   color: #fff;
   padding: 40px 20px;
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь футера */
 }
 
 .footer-content {
@@ -79,6 +80,8 @@ body {
 .footer-column h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .footer-column ul {
@@ -88,7 +91,7 @@ body {
 }
 
 .footer-column ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px; /* Відстань між елементами списку */
   font-size: 16px;
 }
 
@@ -111,6 +114,7 @@ body {
 .footer-bottom p {
   font-size: 16px;
   margin: 5px 0;
+  color: #ddd; /* колір для підпису */
 }
 
 /* Адаптивність */
@@ -128,5 +132,18 @@ body {
 
   .logo {
     margin-bottom: 10px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr; /* Один стовпець для мобільних пристроїв */
+    gap: 15px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column ul li {
+    font-size: 14px;
   }
 }
