@@ -1,49 +1,65 @@
+/* Загальні стилі */
 html, body {
   height: 100%;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* футер внизу */
+  min-height: 100vh;
 }
 
 .container {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  flex-grow: 1; /* Дозволяє контейнеру зайняти доступний простір */
+  flex-grow: 1;
 }
-
 
 /* Хедер */
 .header {
-    background-color: #4ea3ff;
-    color: white;
-    padding: 10px 0;
+  background-color: #4ea3ff;
+  color: white;
+  padding: 10px 0;
 }
 
 .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Центрування по вертикалі */
 }
 
-.header .logo img {
-    width: 40px;
+.logo img {
+  width: 50px;
 }
 
-.header .header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.logo {
+  display: flex;
+  align-items: center; /* Вирівнювання по вертикалі */
+  gap: 10px;            /* Відстань між логотипом і текстом */
 }
 
-.header .header-right .contact-info p {
-    margin: 5px 0;
-    font-size: 14px;
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 1px; /* Тонке візуальне вирівнювання */
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* Спільні стилі для всіх рядків у правому блоці */
+.header-right p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 20px; /* Абсолютне значення */
 }
 
 /* Футер */
@@ -51,8 +67,6 @@ body {
   background-color: #333;
   color: #fff;
   padding: 40px 20px;
-  position: relative;
-  bottom: 0;
   width: 100%;
 }
 
@@ -70,6 +84,7 @@ body {
 .footer-column ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-column ul li {
@@ -78,22 +93,13 @@ body {
 }
 
 .footer-column a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-column a:hover {
-  text-decoration: underline;
-}
-
-.footer-column ul li a {
-  color: #4ea3ff !important;
+  color: #4ea3ff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.footer-column ul li a:hover {
-  color: #8fcfff !important;
+.footer-column a:hover {
+  color: #8fcfff;
   text-decoration: underline;
 }
 
@@ -107,6 +113,20 @@ body {
   margin: 5px 0;
 }
 
-.footer-bottom p:last-child {
-  margin-bottom: 0;
+/* Адаптивність */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
 }
