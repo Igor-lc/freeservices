@@ -26,6 +26,7 @@ from freeservices.views import base
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', base, name='base'),
+    path('', include('apps.demo.urls')),
 ]
 
 if settings.DEBUG:

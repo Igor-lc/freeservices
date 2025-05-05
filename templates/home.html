@@ -1,0 +1,9 @@
+<!-- freeservices/templates/home.html -->
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'demo/css/card.css' %}">
+  {% include "demo/card.html" %}
+{% endblock %}

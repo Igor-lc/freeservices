@@ -1,0 +1,51 @@
+/* apps/demo/static/demo/css/card.css */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.demo-button {
+  display: inline-block;
+  background-color: #4ea3ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+  background-color: #358fe0;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+}
